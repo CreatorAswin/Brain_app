@@ -1,0 +1,232 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<!-- Mirrored from mrimaster.com/technique bandwidth.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Aug 2022 09:39:37 GMT -->
+<head>
+
+ 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>MRI bandwidth and image quality | how to manipulate transmitter bandwidth and receiver bandwidth | bandwidth and SNR</title>
+	<meta name="description" content="This section of the website will explain about the importance of bandwidth in MRI scanning. This page will explain more about how to manipulate the transmitter bandwidth and receiver bandwidth, how to reduce metal artefacts in MRI and the relation between bandwidth, resolution, FOV ,NEX ,SNR and oversampling ">	<link href="style.css" rel="stylesheet" type="text/css">
+    <!--[if IE]>
+	<link rel="stylesheet" type="text/css" href="ie-style.css" />
+	<![endif]-->
+<style type="text/css">
+<!--
+.style5 {color: #000000}
+.style8 {
+	font-size: 18px;
+	font-style: italic;
+}
+.style11 {
+	font-size: 24px;
+	color: #990000;
+}
+.style13 {
+	font-size: 24px;
+	color: #000000;
+}
+.style14 {font-size: 24px}
+.style16 {
+	font-size: 26px;
+	color: #990000;
+	font-style: italic;
+}
+.style18 {
+	font-size: 24px;
+	font-style: italic;
+	color: #000000;
+}
+.style20 {font-size: 28px; color: #990000; font-style: italic; }
+.style22 {font-size: 24px; color: #990000; font-style: italic; }
+.style25 {font-size: 20px; font-style: italic; color: #000000; }
+.style27 {font-size: 22px}
+.style29 {
+	font-size: 22px;
+	font-style: italic;
+	color: #000000;
+}
+-->
+</style></head>
+
+<table width="1126" height="1435" align="center">
+  <!--header-->
+  <tr> </tr>
+  <tr>
+    <td class="menu"><p><a href="index.html"><img src="images/MRI%20INDEX%20TITLE.png" alt="" width="1151" height="94"></a></p>
+        <div class="main_menu">
+        	<ul>
+            	<li><a href="index.html">HOME</a></li>
+                <li><a href="index-1.html">PATHOLOGY</a></li>
+                <li><a href="index-2.html">CHARACTERISE IMAGE</a></li>
+                <li><a href="index-3.html">PLANNING</a></li>
+                <li><a href="index.4.html">TECHNIQUE</a></li>
+                <li><a href="index.5.html">ANATOMY</a></li>
+                <li><a href="index.6.html">SAFETY</a></li>
+            </ul>
+        </div></td>
+    <td class="menu">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="top_line"></td>
+    <td class="top_line"></td>
+  </tr>
+  <tr>
+    <td class="big_foto"><img src="images/planning%20title%20bar.png" alt="" width="1151" height="158"></td>
+    <td class="big_foto">&nbsp;</td>
+  </tr>
+  <!--content-->
+  <tr>
+    <td style="height:352px;"><table width="1153" height="1261" border="1">
+      <tr>
+        <td width="205" height="5413"><div class="left">
+			<div class="sidebar_menu_3">
+                <ul style="padding:0px;">
+                    <li><a href="index.4.html">RESOLUTION</a></li>
+                    <li><a href="technique%20bandwidth.html">BANDWIDTH</a></li>
+                    <li><a href="technique%20NEX.html">AVERAGES (NEX/NSA)</a></li>
+					<li><a href="technique%20SNR.html">SNR</a></li>
+                </ul>
+            </div></div>          
+	      <p><img src="images/technique/more%20coming.png" alt="" width="209" height="64" border="0" />
+            <script type="text/javascript">
+    google_ad_client = "ca-pub-6288516050897525";
+    google_ad_slot = "9921259280";
+    google_ad_width = 160;
+    google_ad_height = 600;
+</script>
+<!-- 160x600 lengthwise unit -->
+<script type="text/javascript"
+src="../pagead2.googlesyndication.com/pagead/f.txt">
+</script></p>
+	      <p>&nbsp;</p></td>
+        <td width="932" class="col_1"><!--box_top-->
+              <div class="wr_white">
+                <div class="t">
+                  <div class="b">
+                    <div class="l">
+                      <div class="r">
+                        <div class="text2">
+                          <p><img src="images/technique/bandwidth/bandwidth%20and%20image%20quality%20title%20bar.png" alt="" width="886" height="54" /></p>
+	                  <div>
+                        <p class="style5"><strong>Introduction</strong></p>
+                        <p class="style5">In MRI  bandwidth is defined as the amount of frequencies or wavelengths that can be  transmitted or received in a limited amount of time. Bandwidth is measured in  cycles per second or Hertz (Hz). An MRI sequence is designed with two types of  bandwidths: transmitter&nbsp;bandwidth (tBW) and receiver bandwidth (rBW). Transmitter  bandwidth describes the properties of  transmitted radiofrequency (RF) pulses and receiver&nbsp;bandwidth describes the quality of MRI  signal. </p>
+                        <p class="style5"><img src="images/technique/bandwidth/mri%20bandwidth.jpg" alt="mri bandwidth" width="888" height="402" /></p>
+                        <span class="style16">Transmitter bandwidth (tBW)                        </span>
+                        <p class="style5">Transmitter&nbsp;bandwidth is the bandwidth used during the  transmission of RF pulses. This is used to excite a discrete slice thickness or  volume. The lowest possible slice thickness of a pulse sequence is directly  proportional to the transmitter bandwidth of the RF pulse type i.e. the higher  the transmitter bandwidth higher the lowest possible slice thickness.     </p>
+                        <p class="style5">Siemens scanners offer three type of RF pulses  in most of their sequences. A low specific absorption rate (SAR) option which  is the low bandwidth pulse, a normal option which is the medium bandwidth pulse  and a Fast option which is the higher bandwidth pulse.  </p>
+                        <p class="style5">&nbsp;</p>
+                        <p class="style5"><img src="images/technique/bandwidth/Untitled.png" alt="" width="884" height="304" />
+                          <script type="text/javascript">
+    google_ad_client = "ca-pub-6288516050897525";
+    google_ad_slot = "0765641230";
+    google_ad_width = 728;
+    google_ad_height = 90;
+                          </script>
+                          <!-- 728x 90 long ones -->
+                          <script type="text/javascript"
+src="../pagead2.googlesyndication.com/pagead/f.txt">
+                          </script>
+                        </p>
+                        <p class="style5">                          <em><strong>Low SAR </strong></em></p>
+                        <p class="style5">This is a low bandwidth RF pulse with very good slice profile  and allows less crosstalk between slices. This option will allow you to choose  the lowest possible slice thickness in most pulse sequences. This RF pulse type  will give reduced SAR values. Choosing this option reduces the chance of the  sequence going into first level mode.  A  disadvantage of the low SAR RF pulse type are long scan times due to longer  minimum TEs, TRs and echo spacing (the time from one echo to the next echo).  Also, low transmitter bandwidth pulse type is more susceptible to  susceptibility and distortion artefacts. </p>
+                        <p class="style5"><em><strong>Normal </strong></em></p>
+                        <p class="style5">This is a medium  bandwidth RF pulse with good slice profile and optimized SAR behaviour.</p>
+                        <p class="style5"><em><strong>Fast </strong></em></p>
+                        <p><span class="style5">This is a high  bandwidth RF pulse with compromised slice profile and will give a higher SAR  compared to the other modes. This RF pulse type will provide the user an  opportunity to reduce TEs and TRs. It has shorter echo spacing (ES) and very  minimal susceptibility and distortion artefacts. It should be noted that a Fast  RF pulse will have a higher chance of peripheral nerve stimulation.</span>   </p>
+                        <p class="style5"><img src="images/technique/bandwidth/transmitter%20bandwidth.jpg" alt="transmitter bandwidth" width="881" height="372" /></p>
+                        <p>&nbsp;</p>
+                        <span class="RR style8"><span class="RR style11"><span class="RR  style13"><span class="RR  style14">Practical applications of low transmitter bandwidth (Low SAR mode)                        </span></span></span></span>
+                        <p class="style5">Low transmitter&nbsp;bandwidth mode is the most appropriate option  to choose when scanning neonates and sedated patients due to their inability to  feedback to the operator. Low SAR mode must be chosen while scanning pregnant  patients to avoid any potential RF harm to the foetus. Low transmitter&nbsp;bandwidth RF pulses are also useful for  scanning patients with MRI conditional implants e.g. MRI  conditional pacemakers, heart valves.</p>
+                        <span class="style18">Practical applications of high transmitter bandwidth (Fast mode)                        </span>
+                        <p class="style5">High transmitter&nbsp;bandwidth can  be used effectively to reduce scan times in claustrophobic and moving patients.  This option will significantly reduce the minimum TR and TE values allowing the  user to reduce the TR and TE values manually, reducing scan time. The main  disadvantage of this method is shortening the TEs and TRs usually results in  more noise and increases the potential for peripheral stimulation. The diagrams  below show how to choose these options and the results of the manipulations. </p>
+                        <p class="style5"><img src="images/technique/bandwidth/Transmitter%20bandwidth%20(tBW)%20mri.jpg" alt="Transmitter bandwidth (tBW) mri" width="882" height="628" /></p>
+                        <p class="style5">High transmitter  bandwidth is the most appropriate option to select when scanning areas with  metal implants. This option will significantly reduce the susceptibility and  distortion artefacts. During these sequences it is important to carefully  monitor the SAR levels to avoid RF burns. The examples below show the  differences in image quality using low and high transmitter&nbsp;bandwidths in a patient with metal crowns.</p>
+                        <p class="style5"><img src="images/technique/bandwidth/transmitter%20bandwidth%20%20and%20metal%20artifacts.jpg" alt="transmitter bandwidth  and metal artifacts" width="884" height="399" /></p>
+                        <span class="style20">Receiver bandwidth (rBW)                        </span>
+                        <p class="style5">The receiver bandwidth is the range of  frequencies used during the reception of RF pulses. During the reception phase the readout  gradient receives a range of frequencies and converts it into an MR signal  using an analogue digital converter (ADC). The time taken for the ADC to check  and store the amplitude of the echo signal is called the dwell time (D). For a  256 matrix the ADC samples the signal 256 times.</p>
+                        <p class="style5">Total sampling time (Ts) = matrix in read (N) x dwell time (D) </p>
+                        <p class="style5">The  receiver bandwidth is the reciprocal of the total sampling time. The  unit of receiver bandwidth is Hertz (Hz)/pixel. </p>
+                        <p class="style5">Bandwidth: BW = 1/Ts [Hz/pixel] </p>
+                        <p class="style5">Each manufacturer defines the receiver  bandwidth differently. Siemens and Toshiba scanners use receiver bandwidth per  pixel (Hz/pixel). GE scanners use the  bandwidth of the entire matrix which is usually measured in kHz. Philips  scanners use the water-fat shift in pixels (WFS) to measure the bandwidth. In a  1.5T scanner the resonating frequency difference between a fat and water proton  is 220Hz and in a 3T scanner it is about 440Hz.</p>
+                        <p class="style5">WFS in 1.5Tscanner = (Hz/pixel)/ 220Hz</p>
+                        <p class="style5">&nbsp;</p>
+                        <p class="style5">Receiver bandwidth is one of the parameters you  can change on most scanners. Bandwidth and sampling time are inversely  proportional to each other. Increasing the bandwidth shortens sampling time. It  however reduces the signal amplitude and increases the noise level in pixels  resulting in a significant reduction in the signal-to-noise ratio (SNR) of the  image. </p>
+                        <p class="style3 style5"><img src="images/technique/bandwidth/Bandwidth%20and%20SNR.jpg" alt="Bandwidth and SNR" width="887" height="316" /></p>
+                        <p class="style5"><span class="style3 style5"><img src="images/technique/bandwidth/receiver%20bandwidth%20parameters.jpg" alt="receiver bandwidth parameters" width="881" height="563" /></span><br>
+                        </p>
+                        <span class="style8 style14 style5">Practical applications of high receiver bandwidth (rBW)                        </span>
+                        <p class="style5">Increasing the receiver bandwidth shortens the  scan time by allowing shorter TR and TEs. For example, a T1 sequence with a  bandwidth of 130 with 600 TR and 25 TE is usually acquired in about 3.30  minutes. The same sequence with a bandwidth of 300 will give you the option to  reduce the minimum TR to 450 and TE to 16 reducing the scan time from 3.30  minutes to 2.10 minutes. This option can be used for scanning claustrophobic  and moving patients. A disadvantage is that choosing a higher bandwidth results  in a reduction in the SNR. </p>
+                        <p class="style5"><img src="images/technique/bandwidth/MRI%20Practical%20applications%20of%20high%20Receiver%20bandwidth%20(rBW).jpg" alt="" width="881" height="513" /><br>
+                        </p>
+                        <p class="style5">Increasing the  receiver bandwidth can be a method to produce less blurry images as it reduces  the echo spacing. In turbo spin echo sequences, higher bandwidth increases the  turbo factor due to short echo spacing. This increase in turbo factor results  in a higher fat signal in TSE scans. </p>
+                        <p class="style5">&nbsp;</p>
+                        <p class="style5"><img src="images/technique/bandwidth/bandwidth%20and%20fat%20signal%20%20in%20MRI.jpg" alt="bandwidth and fat signal  in MRI" width="881" height="390" /><br>
+                        </p>
+                        <p class="style5">Higher receiver  bandwidth sequences are also very effective in reducing metallic susceptibility  artefacts. The  area around the implant is manipulated by strong local off-resonances resulting  in field distortions. The degree of field distortions depends on the size,  shape and properties of the metal. During signal processing these in-plane and  through-plane distortions will shift the image pixels from their real positions  resulting in a distorted image.  The  regions with severe field changes will lead to signal voids and appear as black  areas in the image.  The regions with  signal pileups appear as very bright areas. Increasing the bandwidth reduces  the through-plane distortion of the slice profile and produces less distorted  final images. </p>
+                        <p class="style5"><img src="images/technique/bandwidth/MRI%20high%20Receiver%20bandwidth%20(rBW)%20and%20low%20metal%20artifacts.jpg" alt="MRI high Receiver bandwidth (rBW) and low metal artifacts" width="883" height="494" /><br>
+                        </p>
+                        <p class="style5">Higher receiver  bandwidth also reduces chemical shift artefacts. Fat protons resonate  at an approximately 3.3 ppm lower frequency than water protons due to the  difference in their molecular structure. Signals from fat protons always shift  to lower frequencies by a certain pixel in the readout direction. This is known  as chemical shift artefact. The degree of shifting depends on the bandwidth and  field strength of the magnet. Increasing the receiver bandwidth will reduce  chemical shift artefact by reducing the shifting of fat protons.  Higher field strengths increase the chemical  shift artefact which usually appears in 1.5T and 3T scanners. </p>
+                        <p class="style5"><img src="images/technique/bandwidth/chemical%20shift%20artefacts%20and%20bandwidth%20in%20MRI.jpg" alt="chemical shift artefacts and bandwidth in MRI" width="867" height="352" /></p>
+                        <p class="style3"><CENTER>
+                          <p>
+  <script type="text/javascript">
+    google_ad_client = "ca-pub-6288516050897525";
+    google_ad_slot = "0765641230";
+    google_ad_width = 728;
+    google_ad_height = 90;
+</script>
+  <!-- 728x 90 long ones -->
+  <script type="text/javascript"
+src="../pagead2.googlesyndication.com/pagead/f.txt">
+</script>
+                          </p>
+                          <p><span class="style5"><img src="images/technique/bandwidth/High%20receiver%20bandwidth%20advantages%20and%20disadvantages.jpg" alt="" width="881" height="248" /></span> </p>
+                        </CENTER></p>
+                        <span class="style8 style5 style14">Practical applications of low receiver bandwidth                        </span>
+                        <p><span class="style5">Decreasing the bandwidth increases the SNR.  This method can be used to boost the SNR in high resolution scans with very  small field of views e.g. temporomandibular joint (TMJ) imaging. Reducing the  bandwidth will increase the TR, TE and echo spacing. This results in an  increase the scan time and can also increases the chances of chemical shift, distortion and susceptibility  artefacts.</span>  </p>
+                        <p class="style5"><img src="images/technique/bandwidth/High%20and%20low%20bandwidth%20MRI%20image.jpg" alt="High and low bandwidth MRI image" width="879" height="467" /></p>
+                        <p class="style5">Lower receiver  bandwidths will reduce the minimal field of view. For example, a sequence with  a bandwidth of 250 will give a minimum field of view of 130 and the same  sequence with a bandwidth of 80 will reduce the minimum field to 90. This  option can be used while scanning small body parts e.g. TMJ and thumb imaging.</p>
+                        <p class="style5"><img src="images/technique/bandwidth/Low%20receiver%20bandwidth%20advantages%20and%20disadvantages.jpg" alt="" width="867" height="243" border="0" /></p>
+                        <span class="style22">Receiver bandwidth manipulation                        </span>
+                        <p class="style5">Bandwidth is one of  the main parameters that can be manipulated by the Radiographer to reduce scan  time, increase SNR and reduce artefacts. The section below will show you how to  manipulate the bandwidth while maintaining the SNR. For the manipulation of  bandwidth, it is necessary to know the relationship of bandwidth with other  parameters. Radiographers can choose one of the following techniques to  successfully manipulate the bandwidth.  </p>
+                        <span class="style8 style5 style27">Bandwidth and  Resolution                        </span>
+                        <p class="style5">Both resolution and  bandwidth uses the readout gradient. The higher the resolution, the higher the  readout gradient. A higher bandwidth also requires a higher readout gradient.  Increasing the bandwidth and resolution at the same time increases the workload  of the readout gradient. The result is a significant drop in the SNR producing  very grainy images. </p>
+                        <p class="style5">If you want to  increase the bandwidth to reduce artefacts it is necessary to compensate the  SNR by manipulating other parameters. One of the main parameters that you can  reduce to improve the SNR is resolution. For example, take a T1 TSE sequence  with 200 FOV, 320x320 matrix and bandwidth of 130. If you want to increase the  bandwidth from 130 to 500 the signal will drop from 100% to 49% of the original  SNR. To compensate for the signal drop you can reduce the matrix size from  320x320 to 256x256. This will increase the signal from 49% to 85% and will also  reduce the scanning time. Increasing the bandwidth will provide the user the  option to reduce the TE and TR, reducing the scan time further. This is one of  the most effective ways of cutting down the scanning time with very minimal  quality loss. It is the most time efficient method while scanning metal  implants, claustrophobic and moving patients.</p>
+                        <p class="style5">&nbsp;</p>
+                        <p><img src="images/technique/bandwidth/Bandwidth%20and%20Resolution%20in%20MRI.jpg" alt="Bandwidth and Resolution in MRI" width="881" height="368" /></p>
+                        <span class="style25">Bandwidth and averages (number of excitations NEX/number of signal averages NSA)                        </span>
+                        <p><span class="style5">Increasing the  bandwidth will reduce the SNR. Increasing the averages is the most appropriate  technique to increase SNR. For example, take a T1 TSE sequence with a bandwidth  of 100, averages 2 and a relative SNR of 100%. Increasing the bandwidth from  100 to 250 will reduce the SNR to 74% of the original SNR. The signal loss can  be compensated by increasing the averages from 2 to 3. This method will provide  better quality images than the previous option. The down side of this method is  that it will significantly increase the scan time. This is the most appropriate  technique to use if time is not of concern.     </span>   </p>
+                        <p><img src="images/technique/bandwidth/Bandwidth%20and%20NEX%20in%20MRI.jpg" alt="bandwidth/Bandwidth and NEX in MRI" width="881" height="346" /> </p>
+                        <span class="style8 style5 style27">Bandwidth and field of view (FOV)                        </span>
+                        <p class="style5">Increasing the FOV  will increase the pixel size. Larger pixels will receive more signals and  produce high SNR images. In order to compensate from the SNR loss from  increasing the bandwidth the user can increase the FOV. For example, take a T1  TSE sequence with 
+200 FOV, bandwidth of  130 and a relative SNR of 100%. Increasing the bandwidth from 130 to 250 will  reduce the SNR to 74%. Increasing the FOV from 200 to 260 will bring the SNR  back to 100%. This method will however slightly reduce the image quality. It is  not an appropriate method to choose where high-resolution scanning is required  e.g. pituitary fossa imaging.</p>
+                        <p><img src="images/technique/bandwidth/Bandwidth%20and%20FOV%20in%20MRI.jpg" alt="Bandwidth and FOV in MRI" width="882" height="338" /></p>
+                        <span class="style29">Bandwidth and oversampling                        </span>
+                        <p class="style5">Increasing the oversampling  will increase the SNR and reduce aliasing artefacts.  This option can be used to increase the SNR in small field of view scans with  high bandwidth e.g. prostate imaging. This method will result in superior image  quality. The only disadvantage of this method is that the scan time will  increase. </p>
+                        <p><img src="images/technique/bandwidth/Bandwidth%20and%20oversamplaing%20in%20MRI.jpg" alt="Bandwidth and oversamplaing in MR" width="867" height="337" /></p>
+                        <p class="style5"><img src="images/END%20SECTION.png" alt="" width="861" height="64" /></p>
+                        </div>
+                        </div></div>
+                    </div>
+                  </div>
+                </div>
+          </div></td>
+        </tr>
+    </table></td>
+    <td style="height:352px;">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="height:12px;"></td>
+    <td style="height:12px;"></td>
+  </tr>
+  <tr>
+    <td class="top_line"></td>
+    <td class="top_line"></td>
+  </tr>
+  <!--footer-->
+  <tr>
+
+    <td class="footer">&nbsp;</td>
+  </tr>
+</table>

@@ -1,0 +1,224 @@
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<!-- Mirrored from mrimaster.com/technique SNR.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Aug 2022 09:39:46 GMT -->
+<head>
+
+ 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>signal-to-noise ratio (SNR) in MRI | factors affecting SNR | calculating snr mri</title>
+	<meta name="description" content="This section of the website will explain about the importance of signal-to-noise ratio (SNR) in MRI. This page will explain more about How to measure SNR and factors affecting SNR and relationship between SNR and Field strength, bandwidth , Metrix size , flip angle, TE and TR">	<link href="style.css" rel="stylesheet" type="text/css">
+    <!--[if IE]>
+	<link rel="stylesheet" type="text/css" href="ie-style.css" />
+	<![endif]-->
+<style type="text/css">
+<!--
+.style5 {color: #000000}
+.style8 {
+	font-size: 18px;
+	font-style: italic;
+}
+.style14 {font-size: 24px}
+.style18 {
+	font-size: 24px;
+	font-style: italic;
+	color: #000000;
+}
+.style20 {font-size: 28px; color: #990000; font-style: italic; }
+.style25 {font-size: 20px; font-style: italic; color: #000000; }
+.style27 {font-size: 22px}
+.style29 {
+	font-size: 22px;
+	font-style: italic;
+	color: #000000;
+}
+.style33 {font-size: x-large; font-style: italic; color: #000000; }
+.style35 {font-size: x-large; font-style: italic; color: #000000; font-family: "Open Sans"; }
+-->
+</style></head>
+
+<table width="1126" height="1435" align="center">
+  <!--header-->
+  <tr> </tr>
+  <tr>
+    <td class="menu"><p><a href="index.html"><img src="images/MRI%20INDEX%20TITLE.png" alt="" width="1151" height="94"></a></p>
+        <div class="main_menu">
+        	<ul>
+            	<li><a href="index.html">HOME</a></li>
+                <li><a href="index-1.html">PATHOLOGY</a></li>
+                <li><a href="index-2.html">CHARACTERISE IMAGE</a></li>
+                <li><a href="index-3.html">PLANNING</a></li>
+                <li><a href="index.4.html">TECHNIQUE</a></li>
+                <li><a href="index.5.html">ANATOMY</a></li>
+                <li><a href="index.6.html">SAFETY</a></li>
+            </ul>
+        </div></td>
+    <td class="menu">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="top_line"></td>
+    <td class="top_line"></td>
+  </tr>
+  <tr>
+    <td class="big_foto"><img src="images/planning%20title%20bar.png" alt="" width="1151" height="158"></td>
+    <td class="big_foto">&nbsp;</td>
+  </tr>
+  <!--content-->
+  <tr>
+    <td style="height:352px;"><table width="1153" height="1261" border="1">
+      <tr>
+        <td width="205" height="5413"><div class="left">
+			<div class="sidebar_menu_3">
+                <ul style="padding:0px;">
+                    <li><a href="index.4.html">RESOLUTION</a></li>
+                    <li><a href="technique%20bandwidth.html">BANDWIDTH</a></li>
+                    <li><a href="technique%20NEX.html">AVERAGES (NEX/NSA)</a></li>
+					<li><a href="technique%20SNR.html">SNR</a></li>
+                </ul>
+            </div></div>          
+	      <p><img src="images/technique/more%20coming.png" alt="" width="209" height="64" border="0" />
+            <script type="text/javascript">
+    google_ad_client = "ca-pub-6288516050897525";
+    google_ad_slot = "9921259280";
+    google_ad_width = 160;
+    google_ad_height = 600;
+</script>
+<!-- 160x600 lengthwise unit -->
+<script type="text/javascript"
+src="../pagead2.googlesyndication.com/pagead/f.txt">
+</script></p>
+	      <p>&nbsp;</p></td>
+        <td width="932" class="col_1"><!--box_top-->
+              <div class="wr_white">
+                <div class="t">
+                  <div class="b">
+                    <div class="l">
+                      <div class="r">
+                        <div class="text2">
+                          <p><img src="images/technique/SNR%20IMAGE/RenderedImage.png" alt="" width="886" height="49" /></p>
+	                  <div>
+                        <p class="style5"><strong>Introduction</strong></p>
+                        <p class="style5">Signal-to-noise ratio (SNR) is a standard  used to describe the performance of an MRI system. An MRI image is not created  by pure MRI signals but from a combination of MRI signals and unavoidable  background noise.</p>
+                        <p class="style5">                          MRI image = signal + noise</p>
+                        <p class="style5">                          Noise in an MRI image does not contribute  useful information toward image formation and is produced by the static  fluctuation of signal intensity, usually appearing as grains or irregular  patterns. Noise in MRI is from two main sources:</p>
+                        <p class="style5">1. Molecular movement - charged particles in the human body create  electromagnetic noise </p>
+                        <p class="style5">2. Electrical resistance - resistance from the receiver coils, data  cables and the electronic components of the measurement system </p>
+                        <p class="style5">Noise produced in the MRI image depends  on:</p>
+                        <p class="style5">1. The coil - the number of elements, type and size  and of the coil e.g. 8-channel body coil, 4-channel flex coil</p>
+                        <p class="style5">2. Bandwidth - differs in each pulse sequence</p>
+                        <p class="style5">In MRI the SNR is mainly used for image  evaluation and measurement of contrast enhancement. SNR is also used for  quality assurance, pulse sequence comparison and radiofrequency (RF) coil  comparison.<br>
+                          Several methods are available to measure  SNR. The most common of these is done by measuring the signal of two separate  regions within a single image and utilising a formula. Most MRI systems have a  region of interest (ROI) option in their image processing section which  measures signal intensities. In order to measure the SNR on an image, place the  first ROI on tissues with the most homogenous area and the highest signal  intensity. Then record the values of the signal intensity in that region.  Subsequently, position the second ROI (in the largest possible size to include  maximum noise), outside of the tissues in the noisy image background.   Record the values of signal intensity in  that region. Calculate the image SNR using this formula:<br>
+                          SNR = signal/noise<br>
+                          In the example below, a T1 axial brain  image is used and the signal intensity of the white matter and the image  background is taken. In order to get the SNR value of the image divide the  signal intensity value of the white matter by the standard deviation value in  the background.</p>
+                        <p class="style5"><img src="images/technique/SNR%20IMAGE/how%20to%20calculate%20snr%20of%20an%20image%20IN%20MRI.jpg" alt="how to calculate snr of an image IN MRI" width="885" height="551" /></p>
+                         <span class="style20">Factors affecting signal-to-noise ratio (SNR)                         </span>
+                         <p>&nbsp;</p>
+                         <p class="style18"><em><strong>Field strength and SNR</strong></em>                         </p>
+                         <p class="style5">Field strength and SNR are directly  proportional to each other. Increasing the field strength will increase the  longitudinal magnetisation by aligning more protons to the axis of the main  magnetic field. This results in an overall increase in the amount of signal  produced which will improve SNR. MRI systems using higher field strengths  produce higher SNR images in comparison to the low field strength systems.  Along with higher SNR images, high field strength MRI systems will also be able  to produce high spatial resolution images in a shorter amount of time. This is  particularly advantageous in high resolution imaging or in performing fast  scans on claustrophobic or moving patients. For example, a T1 tse sequence with  matrix size of 320x320 and number of excitations (NEX) 2 with 100% SNR will  take approximately 5 minutes in a 1.5T scanner. A similar amount of SNR can be  achieved in a 3T system with NEX 1 in 2.5 minutes.</p>
+                         <p class="style5"><img src="images/technique/SNR%20IMAGE/SNR%20comparison%20of%203T%20and%201.5%20images.jpg" alt="SNR comparison of 3T and 1.5 images" width="885" height="618" />
+                           <script type="text/javascript">
+    google_ad_client = "ca-pub-6288516050897525";
+    google_ad_slot = "0765641230";
+    google_ad_width = 728;
+    google_ad_height = 90;
+                          </script>
+                          <!-- 728x 90 long ones -->
+                          <script type="text/javascript"
+src="../pagead2.googlesyndication.com/pagead/f.txt">
+                          </script>
+						 </p>
+                         <p class="style14 style18"><em><strong>Radiofrequency coil and SNR</strong></em></p>
+                         <p class="style5">There are a wide range of RF transmitter  and receiver coils available in most MRI systems. Correct selection of the  appropriate radiofrequency coil is essential to achieving the optimum SNR. In  order to achieve maximum SNR, the RF coils should be as close as possible to  the anatomy being imaged. This the main reason that most MRI systems have  dedicated coils for each body part. SNR also depends on the number of  transmitter and receiver elements within the RF coils. The higher the number of  transmitter and receiver elements, the better the SNR eg. a 32-channel  (receiver element) body coil will produce better SNR compared to a 4-channel  body coil.  </p>
+                         <p class="style5">MRI operators will most often notice a  significant drop in SNR while scanning patients with a high BMI. The reason  being the centre of the anatomy is too far from the receiver coils. The user  must manipulate the scanning parameters to improve SNR while scanning patients  with a high BMI.</p>
+                         <p class="style5"><img src="images/technique/SNR%20IMAGE/SNR%20comparison%20of%20low%20channel%20(coil%20elements)%20and%20high%20channel%20(coil%20elements)%20%20MRI%20coils.jpg" alt="SNR comparison of low channel (coil elements) and high channel (coil elements)  MRI coils" width="885" height="611" /></p>
+                         <p class="style5"><span class="style33">Tissue Characteristics  and SNR                         </span> </p>
+                         <p class="style5">SNR also depends on the magnetic characteristics of the tissue being  imaged. Tissues with a higher number of protons will produce better signal  intensities and higher SNR. For example, if a scan were performed using the  same protocol in an infant and adult, the infant scan will see a higher SNR.</p>
+                         <p class="style5">MRI operators may have noticed that adding fat saturation to sequences  often results in a grainy, low SNR image. Here, nullifying the signals from the  fat protons reduces the overall signal intensity from the anatomy being imaged.  Any reduction in signal intensities reduces the overall SNR.  </p>
+                         <p class="style5">&nbsp;</p>
+                         <span class="style35">TR and SNR                         </span>
+                         <p><span class="style5">Increasing the TR will increase the SNR as a high TR will allow the  longitudinal magnetization to approach its maximum and produce high signal  intensities. Increasing the TR beyond a certain limit will however reduce the  T1 effect. If we take a T1 sequence with TR of 500 and SNR of 100%, increasing  the TR to 1000 will increase the SNR but reduce the T1 effect and produce  images with very poor tissue contrast. Adequate use of TR is very important in  T1 weighted imaging to produce good SNR and tissue contrast.      </span>    </p>
+                        <p class="style5"><img src="images/technique/SNR%20IMAGE/Repetition%20time%20(TR)%20and%20SNR%20relation%20in%20MRI.jpg" alt="Repetition time (TR) and SNR relation in MRI" width="885" height="428" /></p>
+                        <p>&nbsp;</p>
+                        <span class="style35">TE and SNR                        </span>
+                        <p class="style5">Increasing the TE will reduce the SNR. A long TE will cause the  transverse magnetisation to decay to very low values and result in signal loss.  Decreasing the TE beyond a certain limit will reduce the T2 effect. For  example, a T2 sequence with TR of 5000, TE 110 and SNR of 100%, decreasing the  TE to 50 will increase the SNR but reduce the T2 effect and produce images with  very poor tissue contrast. Reduction of the TE to increase the SNR should only  be used for T1 weighted sequences.</p>
+                        <p class="style5"><img src="images/technique/SNR%20IMAGE/echo%20time%20%20(TE)%20and%20SNR%20relation%20in%20MRI.jpg" alt="echo time  (TE) and SNR relation in MRI" width="885" height="679" /></p>
+                        <span class="style35">Flip angle and SNR                        </span>
+                        <p class="style5">High transmitter&nbsp;bandwidth can  be used effectively to reduce scan times in claustrophobic and moving patients.  This option will significantly reduce the minimum TR and TE values allowing the  user to reduce the TR and TE values manually, reducing scan time. The main  disadvantage of this method is shortening the TEs and TRs usually results in  more noise and increases the potential for peripheral stimulation. The diagrams  below show how to choose these options and the results of the manipulations. </p>
+                        <p class="style5"><img src="images/technique/SNR%20IMAGE/flip%20angle%20and%20SNR%20relation%20in%20MRI.jpg" alt="flip angle and SNR relation in MRI" width="885" height="571" /></p>
+                        <p class="style5">&nbsp;</p>
+                         <span class="style35">Slice thickness and SNR                         </span>
+                         <p class="style5">Increasing the slice thickness will increase the SNR. This follows the  principle that increasing the slice thickness increases the voxel size  resulting in an increase in the amount of signal received by the individual  voxels. Increasing the slice thickness will however reduce the spatial  resolution and increase the partial volume effects. Taking a T1 sequence with slice thickness of 2 mm and  relative SNR of 40%, increasing the slice thickness to 6 mm will increase the  SNR to 90%.</p>
+                         <p class="style5"><img src="images/technique/SNR%20IMAGE/Slice%20thickness%20and%20SNR%20relation%20in%20MRI.jpg" alt="Slice thickness and SNR relation in MRI" width="885" height="492" /></p>
+                          <span class="style35">Slice gap and SNR                          </span>
+                          <p class="style5">Slice gap is the distance between two adjacent slices. Slice gap is  usually calculated as a percentage of the slice thickness. They are necessary  on order to avoid slice overlapping due to the imperfection of the RF pulse.  Even choosing a rectangular slice profile does not produce perfect rectangular  signals. By removing the slice gap the two adjacent slices will overlap at  their edges. This will result in the RF pulse of one slice exciting a small  portion of the adjacent slice. This phenomenon is also called a cross-talk. The  cross-talk effect creates a saturation effect in the area of slice overlap and  results in a significant reduction of SNR.</p>
+                          <p class="style5">If a T2 single shot FSE (HASTE) sequence with a 4mm slice thickness  and 50% (2mm) slice gap sees a reduction in the slice gap to 0%, this will  result in a slice overlap and produce low SNR images. This is one of the main  reasons why HASTE sequences with continuous slice acquisitions will have a high  SNR in the first image followed by low SNR in subsequent images. This can be  either reduced by increasing the slice gap or choosing the interleave option  (which scans odd number slices together then even numbered slices together). It  should be noted that increasing the slice gap beyond certain limits, usually  above 50%, can cause misregistration.</p>
+                          <p class="style5"><img src="images/technique/SNR%20IMAGE/Inter%20slice%20gap%20and%20SNR%20relation%20in%20MRI.jpg" alt="Inter slice gap and SNR relation in MRI" width="885" height="439" /></p>
+                        <p class="style8 style14 style5">&nbsp;</p>
+                         <span class="style35">Matrix size and SNR                         </span>
+                         <p class="style5">Increasing the matrix size will reduce the SNR. Increasing the matrix  reduces the voxel size, reducing the amount of signal received by the  individual pixels. Smaller pixels will receive less signal and produce a low  SNR image. As an example, after a T1 tse sequence with 100 FOV, 4mm slice  thickness, 256x256 matrix size and a relative SNR of 100%, sees an increase in  the matrix size from 256X256 to 320X320 the SNR will reduce to 74%. Conversely,  decreasing the matrix size will reduce the spatial resolution and produce blurry  images. Correct selection of matrix size for a particular FOV is necessary for  the production of optimum quality images.</p>
+                         <p class="style5"><img src="images/technique/SNR%20IMAGE/Matrix%20size%20(resolution)%20and%20SNR%20relation%20in%20MRI.jpg" alt="Matrix size (resolution) and SNR relation in MRI" width="885" height="428" /><br></p>
+                          <span class="style35">Field of view (FOV) and SNR                          </span>
+                          <p class="style5">Increasing the FOV will increase the SNR. Increasing the FOV will  increase the pixel size which will increase the amount of signals received by  individual pixels. Large pixels will receive more signal and produce high SNR  images. Increasing the FOV will however reduce the spatial resolution and produce  blurry images. In order to achieve maximum spatial resolution, the user must  increase the matrix size whenever the FOV is increased. If a T1 tse sequence  with 100 FOV, 192x192 matrix and relative SNR of 100% has an increase in the  FOV from 100mm to 210mm, this increases the SNR to 170%. This step produces a  high SNR but low spatial resolution image. To overcome this, increasing the  matrix size to 256x256 will improve the spatial resolution and give an SNR of  120%.</p>
+                          <p class="style5">&nbsp;</p>
+                        <p class="style5"><img src="images/technique/SNR%20IMAGE/Field%20of%20view%20(FOV)%20and%20SNR%20relation%20in%20MRI.jpg" alt="Field of view (FOV) and SNR relation in MRI" width="885" height="414" /><br></p>
+                         <span class="style35">Receiver bandwidth and SNR </span>
+                         <p class="style5">Increasing the receiver bandwidth reduces  the SNR. Receiver bandwidth is the amount of frequencies or wavelengths  collected during the reception phase (frequency encoding) of RF pulses.  Increasing the bandwidth reduces the scan time, susceptibility artefacts and  chemical shift artefacts. Decreasing the band width to half will increase the  SNR by 30%. In this example, a T1 sequence with a 260 bandwidth, acquisition  time of 2 minutes and relative SNR of 100% has a decrease in the bandwidth from  260 to 130. This increases the relative SNR to 130% but increases the scan time  to 3 minutes. Care should be taken as decreasing the bandwidth beyond certain  limits will see an increase in susceptibility and chemical shift artefacts.</p>
+                         <p class="style5"><img src="images/technique/SNR%20IMAGE/Bandwidt%20and%20SNR%20relation%20in%20MRI.jpg" alt="Bandwidt and SNR relation in MRI" width="885" height="574" /><br>
+                        </p>
+                         <span class="style35">Number of excitations (NEX) and SNR                         </span>
+                         <p class="style5">Number of excitations (averages) are a measurement parameter that is used to represent the  number of times data is repeatedly acquired to form the same image. Increasing  the Number of excitations (averages) will increase the SNR by the square root  of two (√2). Doubling the NEX will increase the SNR by 140% and double the scan  time. If a T1 tse sequence with a scan time of 2 minutes, NEX 1 and SNR of 40%  sees an increase in the NEX from 1 to 4, it will have its SNR increased to 100%  but have a scan time of 8 minutes.</p>
+                         <p class="style5"><img src="images/technique/SNR%20IMAGE/Number%20of%20excitations%20(NEX)%20or%20%20NSA%20and%20SNR%20relation%20in%20MRI.jpg" alt="Number of excitations (NEX) or  NSA and SNR relation in MRI" width="885" height="507" /></p>
+                        <CENTER>
+                          <p><script type="text/javascript">
+    google_ad_client = "ca-pub-6288516050897525";
+    google_ad_slot = "0765641230";
+    google_ad_width = 728;
+    google_ad_height = 90;
+</script>
+  <!-- 728x 90 long ones -->
+  <script type="text/javascript"
+src="../pagead2.googlesyndication.com/pagead/f.txt">
+</script>
+  </p>
+                          <p><span class="style35">Phase oversampling and SNR                           </span> </p>
+                        </CENTER>
+                        <p class="style5">Phase oversampling is a technique used to eliminate phase wrap or  wrap-around artefact. Phase oversampling is performed by increasing the  sampling frequency in the phase encoding direction. Increasing the phase  oversampling will increase the FOV and number of phase-encoding steps in the  phase direction. Increasing the phase oversampling will also increase the SNR  and acquisition time. If a T1 tse sequence with 150 FOV and relative SNR of  100% has its phase oversampling changed to 100%, the SNR will increase to 120%.  </p>
+                        <p class="style5"><img src="images/technique/SNR%20IMAGE/Phase%20oversampling%20(No%20phase-wrap%20)and%20SNR%20relation%20in%20MRI.jpg" alt="Phase oversampling (No phase-wrap )and SNR relation in MRI" width="885" height="480" /></p>
+                        <span class="style35">Partial K-space filling and SNR                        </span>
+                        <p class="style5">Partial K- space filling techniques save significant  amounts of scan time without making changes to any other scanning parameters.  The two main types of partial k-space acquisition techniques are partial  Fourier imaging and partial echo imaging.  Both of these techniques are used for fast imaging to produce similar  resolution images but with compromised SNR.                          </p>
+                        <p class="style5">In partial Fourier imaging only  half or just more than half of the K- space lines in the phase encoding direction are acquired to  create the entire image. This will reduce the scan time but produce low SNR  images.</p>
+                        <p class="style5">In partial echo imaging only part  of the echoes in the frequency encoding direction are sampled to create the  entire image. This method will again reduce the scan time but produce low SNR  scans.</p>
+                        <p class="style5"><img src="images/technique/SNR%20IMAGE/partial%20Fourier%20(Partial%20K-%20space%20filling)%20and%20SNR%20relation%20in%20MRI.jpg" alt="partial Fourier (Partial K- space filling) and SNR relation in MRI" width="885" height="538" border="0" /></p>
+                         <span class="style35">Parallel imaging techniques and SNR                         </span>
+                         <p class="style5">Using parallel imaging techniques will  degrade the SNR of the reconstructed images. The noise produced in the  reconstructed images are due to decreased data sampling and noise amplification  caused by the parallel reconstruction algorithm. Increasing the acceleration  factor in parallel imaging will reduce the SNR. As a final example, if a T1 tse  sequence with a parallel imaging acceleration factor of 2 has an increase in  the acceleration factor to 4, there will be a reduction in the original SNR by  40%.</p>
+                         <p class="style5"><img src="images/technique/SNR%20IMAGE/parallel%20imaging%20(Ipat)%20and%20SNR%20relation%20in%20MRI.jpg" alt="" width="885" height="470" /></p>
+                        <p class="style5"><img src="images/END%20SECTION.png" alt="" width="861" height="64" /></p>
+                        </div>
+                        </div></div>
+                    </div>
+                  </div>
+                </div>
+          </div></td>
+        </tr>
+    </table></td>
+    <td style="height:352px;">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="height:12px;"></td>
+    <td style="height:12px;"></td>
+  </tr>
+  <tr>
+    <td class="top_line"></td>
+    <td class="top_line"></td>
+  </tr>
+  <!--footer-->
+  <tr>
+
+    <td class="footer">&nbsp;</td>
+  </tr>
+</table>
